@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainActivity2">
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.example.cryptocurrency_app_retrofit.view.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/home5"
+        android:name="com.example.cryptocurrency_app_retrofit.view.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home5_to_favorite"
+            app:destination="@id/favorite" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorite"
+        android:name="com.example.cryptocurrency_app_retrofit.view.Favorite"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/news3"
+        android:name="com.example.cryptocurrency_app_retrofit.view.News"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+</navigation>
